@@ -1,0 +1,35 @@
+/*
+#A9F24E - green
+#5FF7F6 - blue
+#F14F54 - red
+#F7E444 - yellow
+#FFFFFF - white
+#1A1A1A - black
+#86E36B - darker green
+#F2F2F2
+
+rgb(79, 163, 241); blue happy
+*/
+body,
+html {
+  background-color: #f14f54;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+
+#title_book {
+  font-size: 25px;
+  margin-left: 10px;
+  border-bottom: 2px solid blanchedalmond;
+  text-transform: capitalize;
+}
+
+#reading_mode {
+  display: none;
+  margin: 50px auto 0px auto;
+  width: 100%;
+  background-color: #f14f54;
+  height: 700px;
+}

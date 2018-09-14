@@ -1,0 +1,20 @@
+/*
+#A9F24E - green
+#5FF7F6 - blue
+#F14F54 - red
+#F7E444 - yellow
+#FFFFFF - white
+#1A1A1A - black
+#86E36B - darker green
+#F2F2F2
+
+rgb(79, 163, 241); blue happy
+*/
+body,
+html {
+  background-color: #f7e444;
+}
+
+.wrapper {
+  background-color: #fff;
+}

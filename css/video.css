@@ -1,0 +1,34 @@
+/*
+#A9F24E - green
+#5FF7F6 - blue
+#F14F54 - red
+#F7E444 - yellow
+#FFFFFF - white
+#1A1A1A - black
+#86E36B - darker green
+#F2F2F2
+
+rgb(79, 163, 241); blue happy
+*/
+body,
+html {
+  background-color: #a9f24e;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+.selected_video {
+  display: none;
+  margin-top: 50px;
+  position: relative;
+  padding-bottom: 45.25%;
+  display: flex;
+  justify-content: center;
+}
+
+.selected_video iframe {
+  position: absolute;
+  width: 80.4%;
+  height: 100%;
+}
