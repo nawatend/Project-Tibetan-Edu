@@ -40,11 +40,11 @@ a {
   top: 0px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar {
   margin-left: 10.5%;
-
   display: flex;
   align-items: center;
 }
@@ -62,6 +62,9 @@ a {
 }
 
 .menu-bar {
+  color: #ffffff;
+}
+.menu-home {
   color: #ffffff;
 }
 
@@ -90,11 +93,11 @@ a {
   opacity: 0.9;
 }
 
-.navbar li:nth-child(4) {
-  float: right;
+.rightmenu {
   margin-right: 10.5%;
-  margin-top: 10px;
-  display: none;
+}
+.rightmenu ul {
+  padding: 0;
 }
 
 .icons {
@@ -151,7 +154,7 @@ rgb(79, 163, 241); blue happy
   align-items: center;
   justify-content: center;
   color: #1a1a1a;
-  margin: 10px 0 0px 0px;
+  margin: 60px 0 0px 0px;
 }
 
 .classes {
@@ -160,7 +163,7 @@ rgb(79, 163, 241); blue happy
 
 .list-of-classes {
   display: flex;
-  margin: 10px auto 50px auto;
+  margin: 10px auto 10px auto;
   width: 100%;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -193,7 +196,7 @@ rgb(79, 163, 241); blue happy
 
 .list-of-stories {
   display: flex;
-  margin: 10px auto 50px auto;
+  margin: 10px auto 10px auto;
   width: 100%;
   justify-content: space-around;
   flex-flow: row wrap;
@@ -212,7 +215,7 @@ rgb(79, 163, 241); blue happy
 
 .list-of-videos {
   display: flex;
-  margin: 10px auto 50px auto;
+  margin: 10px auto 10px auto;
   width: 100%;
   height: 400px;
   justify-content: space-between;
@@ -237,7 +240,7 @@ footer {
   width: 100%;
   font-size: 18px;
   text-transform: uppercase;
-  color: white;
+  color: #f2f2f2;
   position: relative;
   clear: both;
 }
@@ -264,15 +267,31 @@ li {
 .footer_links ul li {
   margin-top: 10px;
   font-size: 13px;
-  color: #f2f2f2;
   text-transform: capitalize;
   font-family: GothamLight;
+}
+.footer_links ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer_links ul li:nth-child(1):hover a {
+  text-decoration: none;
+  color: #f7e444;
+}
+.footer_links ul li:nth-child(2):hover a {
+  text-decoration: none;
+  color: #f14f54;
+}
+
+.footer_links ul li:nth-child(3):hover a {
+  text-decoration: none;
+  color: #a9f24e;
 }
 
 .copywrite {
   margin-top: 10px;
   font-size: 13px;
-  color: #f2f2f2;
   text-transform: capitalize;
   font-family: GothamLight;
 }
@@ -290,28 +309,33 @@ li {
 rgb(79, 163, 241); blue happy
 */
 
-.footer_links li:nth-child(1):hover {
+.footer_links ul li:nth-child(1):hover {
   color: rgb(79, 163, 241);
 }
 
 @media only screen and (max-width: 410px) {
   .wrapper {
     width: 100%;
-    padding: 0;
+    padding: 10px 0;
     margin: 120px auto 20px auto;
   }
   .menu {
     height: 100px;
+    justify-content: space-evenly;
   }
 
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 0;
-    width: 100%;
+  }
+
+  .rightmenu {
+    margin-right: 0;
   }
   .nav-item {
     display: inline-block;
+    margin-left: 10px;
   }
 
   .story {
